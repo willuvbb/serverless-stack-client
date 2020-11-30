@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Amplify } from 'aws-amplify';
 import config from './config';
+import { initSentry } from './libs/errorLib';
 
 Amplify.configure({
   Auth: {
@@ -45,7 +46,5 @@ ReactDOM.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-
-import { initSentry } from './libs/errorLib';
 
 initSentry();
