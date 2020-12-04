@@ -37,6 +37,7 @@ export default function Home() {
   }
 
   function renderNotesList(notes) {
+    console.log(notes)
     return (
       <>
         <LinkContainer to="/notes/new">
